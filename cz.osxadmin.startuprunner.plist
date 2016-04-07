@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Label</key>
+	<string>cz.osxadmin.startuprunner</string>
+	<key>ProgramArguments</key>
+	<array>
+		<string>/Library/Scripts/runner/scriptrunner.bash</string>
+		<string>-o</string>
+		<string>/Library/Scripts/startup/runonce</string>
+		<string>-e</string>
+		<string>/Library/Scripts/startup/runevery</string>
+		<string>-c</string>
+		<string>/Library/Scripts/startup/runchanged</string>
+	</array>
+	<key>RunAtLoad</key>
+	<true/>
+</dict>
+</plist>
